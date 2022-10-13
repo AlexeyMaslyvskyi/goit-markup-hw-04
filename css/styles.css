@@ -83,6 +83,17 @@ ul {
 }
 .contacts-header {
   display: flex;
+  align-items: center;
+}
+.head-svgm {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.head-svgp {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
 }
 
 .contacts-header li + li {
@@ -102,6 +113,16 @@ ul {
 }
 .contacts-header a:hover,
 .contacts-header a:focus {
+  font-style: normal;
+  font-weight: 500;
+
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--accent);
+}
+.contacts-header a svg:hover,
+.contacts-header a svg:focus {
   font-style: normal;
   font-weight: 500;
 
@@ -141,12 +162,8 @@ ul {
   max-width: 1600px;
   padding: 200px 15px;
   margin: 0 auto;
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4),
-    url(../images/team.jpg)
-  );
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/team.jpg);
   /* background-image: url(../images/team.jpg); */
   background-repeat: no-repeat;
   background-position: center;
